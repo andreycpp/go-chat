@@ -10,7 +10,8 @@ Supported commands:
 * /register <password>              Registers currently picked nick with given password
 ```
 Current implementation:
-* Uses in-memory db for registered users
-* Sends all messages to all users, including the sender
-* Disconnects user if same user logs in using different client
+* Generates a username of the form "GuestNNN" for newly connected users. Generated name collisions are currently not validated.
+* Uses in-memory db for registered users.
+* Sends all messages to all users, including the sender.
+* Disconnects user if same user logs in using different client.
 
